@@ -206,8 +206,8 @@ header #logo-header{
 
 #faixa-footer{
     border-top: 1px #C0C0C0 solid;
-    width: 2px;
-    height: 1px;
+    margin: 0px 40px 0px;
+    color: #0F1113;
 }
 
 #rodape-footer{
