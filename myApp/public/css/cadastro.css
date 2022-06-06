@@ -26,15 +26,22 @@ header {
  justify-content: space-between;
  flex-direction: row;
  align-items: center;
+ margin-left: 15px;
 }
 
 header nav .nav-header{
- font-size: 15px;
+ font-size: 20px;
+ padding-left: 20px;
 }
 
 .topico-header{
  color: #fff;
  text-decoration: none;
+ transition: color 0.3s;
+}
+
+.topico-header:hover {
+ color: #01B671;
 }
 
 header #logo-header{
@@ -51,12 +58,13 @@ header #logo-header{
 #opcoes-user-header, a{
  color: #fff;
  font-weight: 300;
- margin: 0px 20px;
+ margin: 0px 15px;
+ font-size: 18px;
 }
 
-#botao-entrar {
- width: 125px;
- height: 35px;
+#botao-entrar{
+ width: 150px;
+ height: 45px;
  margin-bottom: 3px;
  border-radius: 5px;
  border: none;
@@ -64,7 +72,13 @@ header #logo-header{
  color: #263238D9;
  font-weight: 800;
  cursor: pointer;
- font-size: 17px;
+ font-size: 21px;
+ transition: all 0.7s;
+}
+
+#botao-entrar:hover{
+ background-color: #01B671;
+ color: #fff;
 }
 
 #botao-acessibilidade{
@@ -78,7 +92,7 @@ header #logo-header{
 
 #main-cadastro{
  display: flex;
- justify-content: space-around;
+ justify-content: space-evenly;
  width: 100%;
  height: 100vh;
  background-color: #1C2124;
@@ -87,37 +101,123 @@ header #logo-header{
 #cadastro-banner{
  display: flex;
  flex-direction: column;
- height: 97vh;
  justify-content: space-between;
 }
 
-#cadastro-banner, h1{
+#titulo-banner{
  color: #fff;
- font-size: 40px;
+ font-size: 60px;
  margin: 20px 0px 50px;
+ display: flex;
+ align-items: flex-end;
+ justify-content: flex-start;
+}
+
+#titulo-skooby{
+ color: #0098A1;
+ font-size: 60px;
+ font-weight: 800;
+}
+
+#image-banner{
+ height: 700px;
+ width: 700px;
 }
 
 #cadastro-user{
  background-color: #373B3E;
- height: 500px;
- width: 500px;
+ height: 600px;
+ width: 600px;
  border-radius: 5px;
  display: flex;
  flex-direction: column;
- justify-content: space-evenly;
  align-items: center;
+ justify-content: space-evenly;
+}
+
+form{
+ display: flex;
+ flex-direction: column;
+ position: absolute;
 }
 
 form input{
  background-color: #1C2124;
- width: 420px;
- height: 50px;
+ width: 510px;
+ height: 60px;
  border-radius: 5px;
  border: none;
- padding: 10px;
- margin: 20px 0px 5px;
- font-size: 17px;
+ padding: 10px 10px 10px 50px;
+ margin: 5px;
+ font-size: 20px;
  color: #fff;
+ transition: border 0s;
+}
+
+input:hover{
+ border: solid 3px #0098A1;
+}
+
+input:focus{
+ outline: solid 2px #0098A1;
+}
+
+.icone-user{
+ position: absolute;
+ top: 20px;
+ left: 17px;
+ font-size: 20px;
+ color: #0098A1;
+ border: none;
+ cursor: pointer;
+}
+
+.icone-email {
+ position: absolute;
+ top: 109px;
+ left: 17px;
+ font-size: 20px;
+ color: #0098A1
+}
+
+.icone-senha {
+ position: absolute;
+ top: 197px;
+ left: 17px;
+ font-size: 20px;
+ color: #0098A1
+}
+
+.icone-senha-confirmacao {
+ position: absolute;
+ top: 285px;
+ left: 17px;
+ font-size: 20px;
+ color: #0098A1;
+ border: none;
+ cursor: pointer;
+}
+
+form label{
+ color: #fff;
+ font-size: 18px;
+ margin: 2px 0px 0px 5px
+}
+
+form #container-checkbox{
+ display: flex;
+ align-items: center;
+ margin-left: 5px;
+ padding-top: 7px;
+}
+
+label a{
+ font-weight: 800;
+}
+
+#cadastro-user input[type="checkbox"]{
+ height: 17px;
+ width: 17px;
 }
 
 form button {
@@ -129,21 +229,21 @@ form button {
  color: #fff;
  font-size: 23px;
  font-weight: 500;
- margin: 20px 0px 0px 35px;
+ margin: 20px 0px 0px 80px;
  cursor: pointer;
+ transition: all 0.5s;
 }
 
-form label{
- color: #fff;
- display: flex;
- flex-direction: row;
+form button:hover{
+ background-color: #fff;
+ color: #0098A1;
+ font-weight: 800;
 }
 
-#cadastro-user input[type="checkbox"]{
- height: 20px;
- width: 20px;
- display: flex;
- flex-direction: row;
+#faixa-footer{
+ border-top: 1px #C0C0C0 solid;
+ width: 2px;
+ height: 1px;
 }
 
 #rodape-footer{
@@ -160,12 +260,17 @@ form label{
 
 #redes-sociais{
  margin-right: 50px;
- transition: all 0.5s;
 }
 
 .icones-redes-sociais{
  margin: 10px 15px 30px;
+}
+
+.icones-redes-sociais{
+ width: 35px;
+ height: 35px;
  cursor: pointer;
+ transition: all 0.5s;
 }
 
 .icones-redes-sociais:hover{

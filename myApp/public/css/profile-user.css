@@ -113,202 +113,98 @@ header #logo-header{
 }
 
 #container-bodyprofileuser {
-    background-color: #1D2225;
-}
-
-.artuser {
-    margin: -16px;
+    background-color: #1C2124;
 }
 
 #cimaprofileuser {
     padding-top: 15px;
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-evenly;
 }
    
 #mensagemprofileuser {
-    padding: 40px 5px 0px 35px;
     font-family: 'Roboto';
 }
 
 #mensagemprofileuser h1 {
-    width: 311px;
+    width: 222px;
     color:  white;
-    font-size: 35px; 
+    font-size: 25px; 
 }
 
 #mensagemprofileuser h2 {
-    width: 480px;
+    width: 350px;
     margin: 5px;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #containermyaccount {
     display: flex;
+    margin: 0px;
+    justify-content: space-evenly;
 }
-
 #myaccount {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     margin: 15px 15px 15px 15px;
-    padding: 15px 15px 15px 15px;
     width: 1200px;
     height: 650px;
     border-radius: 0px 0px 35px 35px;
-    background-color: #393C3D;
-    color: white;
-    font-size: 25px;
+    justify-content: flex-end;
+    background-color: #393C3D; 
+    padding: 15px;
 }
-#configs-account {
-    width: 155px;
-    height: 30px;
-    color: #1C2022;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #FFC727;
-    font-size: 20px;
-    border-radius: 5px;
-    border: none; 
-}
-  
 .myaccountgradient {
     display: flex;
-    color: white;
-    font-size: 10px;
-    margin: 15px 15px 15px 15px;
-    width: 800px;
-    height: 520px;
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)  */
+    height: 120px;
+    background-color: blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#myaccountuserinfo{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
-#myaccountuserinfo h1{
-    padding: 1px;
+#configs-account {
+  width: 155px;
+  height: 30px;
+  color: #1C2022;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #FFC727;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none; 
 }
 
 #bioaccount {
     display: flex;
     justify-content: flex-end;
     margin: 15px 15px 15px 15px;
-    width: 700px;
+    width: 800px;
     height: 650px;
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 0px 0px 35px 35px;
     background-color: #393C3D; 
     padding: 15px;
 }
-/* .bioaccountgradient {
+.bioaccountgradient {
     display: flex;
     height: 120px;
     background-color: blue;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
+}
 
 #quoteprofileuser {
     display: flex;
-    width: 850px;
-    height: 350px;
-    background-color: #1D2225; 
-    padding: 0px 15px 15px 0px;
-    margin: 15px 15px 15px 15px;
-}
-
-.mylearningbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    width: 98%;
-    height: 120px;
-    margin: 15px;
-    font-size: 25px;
-    color: white;
+    width: 100%;
+    height: 650px;
+    border-radius: 0px 0px 35px 35px;
     background-color: #393C3D; 
+    padding: 15px;
 }
-
-.artuser2 {
-    padding: 0px 7px 284px 0px;
-    margin: -10px;
-}
-
 
 #mylearning {
     display: flex;
-    justify-content: space-evenly;
-    width: 98%;
-    height: 650px;
-    margin: 15px;
-    background-color: #393C3D; 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
-#scheduletime{
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    height: 240px;
-    margin: 15px;
-    background-color:#393C3D;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px 0px 20px 20px;
-}
-
-#scheduletime h1 {
-    color: white;
-    font-size: 31px;
-    width: 685px;
-    height: 35px;
-}
-#scheduletime h2 {
-    color: white;
-    font-size: 18px;
-    width: 760px;
-    height: 100px;
-}
-#scheduletimebutton{
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    color: #1C2022;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #FFC727;
-    font-size: 20px;
-    border-radius: 5px;
-    border: none; 
-}
-
-#scheduletimebutton2{
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    margin-left: 5px;
-    color: #1C2022;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: #A6A6A6;
-    font-size: 20px;
-    border-radius: 5px;
-    border: none; 
-}
-
-.mycourses {
-    display: flex;
-    width: 500px;
-    height: 250px;
-    margin: 15px 15px 15px 15px;
-    background-color: #A6A6A6;
-    color: white;
-}
-
-.mycourses h1 {
-    font-size: 10px;
-    color: white;
-}
-
 
 #container-footer {
     width: 100%;

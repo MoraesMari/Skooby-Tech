@@ -26,16 +26,23 @@ header #menu-entradas{
  justify-content: space-between;
  flex-direction: row;
  align-items: center;
+ margin-left: 15px;
 }
 
 header nav .nav-header{
- font-size: 15px;
+ font-size: 20px;
  margin: 0px 20px;
+ padding-left: 20px;
 }
 
 .topico-header{
-    color: #fff;
-    text-decoration: none;
+ color: #fff;
+ text-decoration: none;
+ transition: color 0.3s;
+}
+
+.topico-header:hover {
+ color: #01B671;
 }
 
 header #logo-header{
@@ -47,25 +54,32 @@ header #logo-header{
 #area-pesquisa{
  border-radius: 15px;
  background-color: #373B3E;
- width: 500px;
- height: 37px;
+ width: 520px;
+ height: 43px;
  display: flex;
  justify-content: space-between;
  align-items: center;
  margin: 0px 10px;
+ padding: 0px 5px;
 }
 
 #campo-pesquisa{
- color: #BABABA;
+ color: #C0C0C0;
  font-size : 15px;
  background-color: #373B3E;
  align-items: center;
  margin-left: 12px;
+ border: none;
+ outline: none;
+ width: 100%;
+ height: 30px;
 }
 
-#icone-campo-pesquisa{
- background-color:#373B3E;
- margin-right: 12px;
+#botao-pesquisar {
+ background-color: #373B3E;
+ border: none;
+ cursor: pointer;
+ margin: 4px 9px 0px 0px;
 }
 
 #opcoes-user-header{
@@ -83,12 +97,13 @@ header #logo-header{
 #link-entrar{
  color: #fff;
  font-weight: 700;
- margin: 0px 20px;
+ margin: 0px 25px;
+ font-size: 20px;
 }
 
 #botao-cadastro {
- width: 125px;
- height: 35px;
+ width: 150px;
+ height: 45px;
  margin-bottom: 3px;
  border-radius: 5px;
  border: none;
@@ -96,7 +111,13 @@ header #logo-header{
  color: #263238D9;
  font-weight: 800;
  cursor: pointer;
- font-size: 14px;
+ font-size: 18px;
+ transition: all 0.7s;
+}
+
+#botao-cadastro:hover{
+ background-color: #01B671;
+ color: #fff;
 }
 
 #botao-acessibilidade{
@@ -110,143 +131,143 @@ header #logo-header{
 }
 
 #container-courses {
-    flex-wrap: wrap;
-    background-color: #1C2124;
+ flex-wrap: wrap;
+ background-color: #1C2124;
 }
 
 #container-categorias{
-    display: flex;
-    color: #fff;
-    flex-wrap: wrap;
-    margin-bottom: 50px;
+ display: flex;
+ color: #fff;
+ flex-wrap: wrap;
+ margin-bottom: 50px;
 }
 
 .categoria{
-    width: 100%;
-    margin: 0px 0px 40px 0px;
+ width: 100%;
+ margin: 0px 0px 40px 0px;
 }
 
 
 .titulo-categorias{
-    color: #0071FF;
-    margin: 10px 10px 20px 80px;
-    text-decoration: underline;
+ color: #0071FF;
+ margin: 10px 10px 20px 80px;
+ text-decoration: underline;
 }
 
 .icone-seta-rolagem-esquerda{
-    width: 60px;
-    height: 50px;
-    border-radius: 2px;
-    background-color: #393C3D;
-    padding: 14px 5px;
+ width: 60px;
+ height: 50px;
+ border-radius: 2px;
+ background-color: #393C3D;
+ padding: 14px 5px;
 }
 
 .icone-seta-rolagem-direita{
-    width: 60px;
-    height: 50px;
-    border-radius: 2px;
-    background-color: #393C3D;
-    padding: 14px 0px 0px 11px;
+ width: 60px;
+ height: 50px;
+ border-radius: 2px;
+ background-color: #393C3D;
+ padding: 14px 0px 0px 11px;
 }
 
 .listagem-cursos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
 }
 
 .imagem-descritiva-curso{
-    width: 210px;
-    height: 140px;
-    margin-bottom: 10px;
+ width: 210px;
+ height: 140px;
+ margin-bottom: 10px;
 }
 
 .imagem-descritiva-curso img{
-    width: 100%;
-    height: 140px;
+ width: 100%;
+ height: 140px;
 }
 
 .curso-detalhes{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 200px;
-    height: 270px;
-    margin: 30px 40px;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ width: 200px;
+ height: 270px;
+ margin: 30px 40px;
 }
 
 .descricao-curso{
-    margin: 5px 0px;
-    width: 100%;
-    color: #fff;
+ margin: 5px 0px;
+ width: 100%;
+ color: #fff;
 }
 
 .descricao-duracao-curso{
-    margin: 5px 0px;
-    font-size: 14px;
+ margin: 5px 0px;
+ font-size: 14px;
 }
 
 .valor-curso{
-    margin: 5px 0px;
-    font-size: 20px;
+ margin: 5px 0px;
+ font-size: 20px;
 }
 
 .opcoes-user-curso{
-    margin: 10px 0px;
+ margin: 10px 0px;
 }
 
 .botao-carrinho-curso{
-    border-radius: 5px;
-    border: none;
-    width: 37px;
-    height: 38px;
-    margin-right: 5px;
-    padding-right: 2px;
-    padding-top: 1px;
+ border-radius: 5px;
+ border: none;
+ width: 37px;
+ height: 38px;
+ margin-right: 5px;
+ padding-right: 2px;
+ padding-top: 1px;
 }
 
 .botao-favoritar-curso{
-    border-radius: 5px;
-    border: none;
-    width: 37px;
-    height: 38px;
-    padding-top: 3px;
-    padding-left: 1px;
+ border-radius: 5px;
+ border: none;
+ width: 37px;
+ height: 38px;
+ padding-top: 3px;
+ padding-left: 1px;
 }
 
 .link-ver-detalhes{
-    color: #fff;
-    font-weight: 700;
-    margin: 7px;
-    text-decoration: underline;
+ color: #fff;
+ font-weight: 700;
+ margin: 7px;
+ text-decoration: underline;
 }
 
 .link-ver-todos{
-    display: flex;
-    width: 100%;
-    font-weight: 900;
-    justify-content: flex-end;
-    cursor: pointer;
-    padding-right: 50px;
-    background-color: #1C2124;
-    color: #0071FF;
-    text-decoration: underline;
-    margin-top: 30px;
+ display: flex;
+ width: 100%;
+ font-weight: 900;
+ justify-content: flex-end;
+ cursor: pointer;
+ padding-right: 50px;
+ background-color: #1C2124;
+ color: #0071FF;
+ text-decoration: underline;
+ margin-top: 30px;
 }
 
 #parceiros {
-    display: flex;
-    background-color: #833C3A;
-    width: 100%;
-    height: 40px; 
-    justify-content: space-evenly;
-    align-items: center;
+ display: flex;
+ background-color: #833C3A;
+ width: 100%;
+ height: 40px; 
+ justify-content: space-evenly;
+ align-items: center;
 }
 
 #titulo-parceiros {
-    color: #C0C0C0;
-    justify-content: flex-start;
+ color: #C0C0C0;
+ justify-content: flex-start;
 }
 
 #container-footer {
@@ -261,7 +282,9 @@ header #logo-header{
 
 #logo-footer{
  margin: 30px;
- padding-bottom: 10px;
+ padding-bottom: 20px;
+ width: 260px;
+ height: 260px;
 }
 
 #area-navegacao-footer{
@@ -269,91 +292,106 @@ header #logo-header{
 }
 
 .conteudo-nav{
-    margin: 0px 50px;
-    color: #fff;
+ margin: 0px 50px;
+ color: #fff;
 }
 
 .titulo-nav{
-    margin: 10px;
-    list-style: none;
-    text-decoration: none;
+ margin: 10px;
+ list-style: none;
+ text-decoration: none;
+ font-size: 23px;
 }
 
 .topico-nav{
-    color: #C0C0C0;
-    list-style: none;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 100;
+ color: #C0C0C0;
+ list-style: none;
+ text-decoration: none;
+ font-weight: 100;
+ font-size: 19px;
+ margin: 7px 0px
 }
 
 
 #newsletter-footer{
-    color: #fff;
-    margin-right: 50px;
+ color: #fff;
+ margin-right: 50px;
+}
+
+#newsletter-footer, h2{
+ font-size: 27px;
 }
 
 #newsletter-detalhes{
-    margin: 7px 0px 15px 0px;
-    font-size: 14px;
-    font-weight: 100;
+ margin: 7px 0px 15px 0px;
+ font-size: 18px;
+ font-weight: 300;
 }
 
 #campo-newsletter{
-    display: flex;
+ display: flex;
 }
 
 #email-newsletter{
-    width: 190px;
-    height: 31px;
-    background-color: #fff;
-    border-radius: 5px;
-    color: #263238D9;
-    padding: 8px 0px 1px 7px;
-    font-size: 13px;
+ width: 240px;
+ height: 37px;
+ background-color: #fff;
+ border-radius: 5px;
+ color: #263238D9;
+ display: flex;
+ align-items: center;
+ padding-left: 10px;
+ font-size: 15px;
 }
 
 #botao-newsletter{
-    margin-left: 10px;
-    width: 130px;
-    height: 31px;
-    border-radius: 5px;
-    border: none;
-    background-color: #000;
-    box-shadow: 3px 3px 3px #000;
-    color: #fff;
-    font-weight: 900;
-    cursor: pointer;
+ margin-left: 10px;
+ width: 155px;
+ height: 37px;
+ border-radius: 5px;
+ box-shadow: 3px 3px 3px #000;
+ border: none;
+ background-color: #000;
+ color: #fff;
+ font-size: 19px;
+ font-weight: 900;
+ cursor: pointer;
 }
 
 #faixa-footer{
-    border-top: 1px #C0C0C0 solid;
-    width: 2px;
-    height: 1px;
+ border-top: 1px #C0C0C0 solid;
+ width: 2px;
+ height: 1px;
 }
 
 #rodape-footer{
-    display: flex;
-    justify-content: space-between;
-    background-color: #0F1113;
-    padding-top: 15px;
+ display: flex;
+ justify-content: space-between;
+ background-color: #0F1113;
+ padding-top: 15px;
 }
 
 #marca-skooby{
-    color: #C0C0C0;
-    margin: 0px 40px 30px
+ color: #C0C0C0;
+ margin: 0px 40px 30px
 }
 
 #redes-sociais{
-    margin-right: 50px;
+ margin-right: 50px;
 }
 
 .icones-redes-sociais{
-    margin: 10px 15px 30px;
-    cursor: pointer;
+ margin: 10px 15px 30px;
+}
+
+.icones-redes-sociais{
+ width: 35px;
+ height: 35px;
+ cursor: pointer;
+ transition: all 0.5s;
 }
 
 .icones-redes-sociais:hover{
-    width: 30px;
-    height: 30px;
+ width: 30px;
+ height: 30px;
 }

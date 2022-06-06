@@ -15,7 +15,7 @@
  </nav>
      
  <span id="opcoes-user-header">
-   <a href="/login"><p>Já tem uma conta?</p></a>
+   <a id="ja-tem-conta" href="/login"><p>Já tem uma conta?</p></a>
    <a href="/login"><button id="botao-entrar">ENTRAR</button></a>
 
  </span>     
@@ -26,26 +26,28 @@
 
  <span id="main-cadastro">
   <div id="cadastro-banner">
-   <h1>Crie sua conta na Skooby</h1>
-   <img src="images/cadastro/freepick-cadastro.svg">
+   <h1 id="titulo-banner">Crie sua conta na<a id="titulo-skooby">SkoobyTech</a></h1>
+   <img id="image-banner" src="images/cadastro/freepick-cadastro.svg">
   </div>
 
   <span id="cadastro-user">
    <form action="/home" method="post">
-    <label for="name"></label>
+    <label class="icone-user" for="name"><i class="fa-solid fa-user-large"></i></label>
     <input type="text" id="name" name="name" placeholder="Nome completo" required>
     <br>
-    <label for="e-mail"></label>
+    <label class="icone-email" for="e-mail"><i class="far fa-envelope"></i></label>
     <input type="email" id="e-mail" name="e-mail" placeholder="Endereço de e-mail" required>
     <br>
-    <label for="senha"></label>
+    <label class="icone-senha" for="senha"><i class="fa-solid fa-unlock"></i></label>
     <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
     <br>
-    <label for="confirmação"></label>
+    <label class="icone-senha-confirmacao" for="senha"><i class="fa-solid fa-lock"></i></label>
     <input type="password" id="confirmação" name="confirmação" placeholder="Confirme sua senha" required>
     <br>
-    <input type="checkbox" name="termos" required>
-    <label for="termos">Li e concordo com os <strong> Termos de Uso.</strong></label>
+    <div id="container-checkbox">
+      <input type="checkbox" name="termos" id="termos" required>
+      <label for="termos" id="termos">Li e concordo com os <a>Termos de Uso.</a></label>
+    </div>
     <br>
     <button>CADASTRAR</button>
    </form>

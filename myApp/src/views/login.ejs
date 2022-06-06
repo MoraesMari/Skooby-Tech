@@ -26,23 +26,24 @@
 
  <span id="main-login">
   <div id="login-banner">
-   <h1>Acesse a plataforma Skooby</h1>
-   <img src="images/login/freepick-login.svg">
+   <h1 id="titulo-banner">Acesse a plataforma<a id="titulo-skooby">SkoobyTech</a></h1>
+   <img id="image-banner" src="images/login/freepick-login.svg">
   </div>
 
   <span id="login-user">
    <form action="/home" method="post">
-    <label for="e-mail"></label>
-    <input type="email" id="e-mail" name="e-mail" placeholder="E-mail" required>
+    <label class="icone-email" for="e-mail"><i class="far fa-envelope"></i></label>
+    <input class="input" type="email" id="e-mail" name="e-mail" placeholder="E-mail" required>
     <br>
-    <label for="senha"></label>
-    <input type="password" id="senha" name="senha" placeholder="Senha" required>
+    <label class="icone-senha" for="senha"><i class="fa-solid fa-unlock"></i></label>
+    <input class="input" type="password" id="senha" name="senha" placeholder="Senha" required>
+    <button class="icone-vision"><i class="fa-solid fa-eye-slash"></i></button>
     <br>
     <a id="esqueceu-senha" href="#">Esqueci minha senha</a>
     <br>
-    <button>ENTRAR</button>
+    <button id="botao-entrar">ENTRAR</button>
    </form>
-   <p>Não tem uma conta?<a id="cadastro" href="/cadastro">Cadastre-se</a></p>
+   <p>Não tem uma conta?<a id="cadastro" href="/cadastro">CADASTRE-SE</a></p>
 
    <span id="rodape-login">
     <p>Ou entre com</p>

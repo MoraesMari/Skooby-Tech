@@ -6,9 +6,25 @@
  <title>SkoobyTech - Escola de Tecnologia</title>
 </head>
 <body>
- <header>
-  <%-include("partials/header") %>
- </header>
+  <header>
+    <nav id= "menu-entradas">
+      <a href= "/home"><img id="logo-header" src="images/home/logoheader.svg" alt="Logo SkoobyTech - Escola de Tecnologia"></a>
+      <a class="topico-header" href= "/home"><h2 class="nav-header">HOME</h2></a>
+      <a class="topico-header" href= "/products"><h2 class="nav-header">CATEGORIAS</h2></a>
+      <a class="topico-header" href= "#"><h2 class="nav-header">ENSINE NA SKOOBY</h2></a>
+    </nav>
+        
+    <div id= "area-pesquisa">
+      <input type="text" id="campo-pesquisa" placeholder="O que você quer aprender?">
+      <button id="botao-pesquisar" type="submit"><img src="images/products/pesquisar.svg" alt="Ícone de lupa de pesquisa"></button>
+    </div>
+        
+    <span id= "opcoes-user-header">
+      <a id="icone-carrinho" href="/carrinho"><img src="images/products/carrinho.svg" alt="ícone de carrinho de compras"></a>
+      <a id="icone-favoritos" href="/favoritos"><img src="images/checkout/icone-favoritos.svg" alt="ícone de cursos favoritados"></a>
+      <a id="icone-userpic" href="/profileuser"><img src="images/checkout/icone-userpic.svg" alt="ícone de página de usuário"></a>
+    </span>   
+  </header>
 
  <div id="botao-acessibilidade">
   <img id="icone-acessibilidade" src="images/products/botaoacessibilidade.svg" alt="ícone do botão acessibilidade">
@@ -20,15 +36,15 @@
    <h2 id="compra-realizada">Oba! Sua compra foi realizada com sucesso!</h2>
   </span>
   <div id="paragrafo-mensagem-sucesso">
-   <p id="texto-checkout">Você pode acessar seu novo curso na área de Meu Aprendizado, no<br> <a href="/user"><strong class="destaque-checkout">Painel de Usuários</strong></a>, 
+   <p id="texto-checkout">Você pode acessar seu novo curso na área de Meu Aprendizado, no<br> <a href="/profileuser"><strong class="destaque-checkout">Painel de Usuários</strong></a>, 
     ou conferir seus outros cursos favoritados em<br> <a href="/favorites"><strong class="destaque-checkout">Favoritos</strong></a>.</p>
   </div>
 
   <div id="linha-divisoria"></div>
 
   <span id="botoes-user">
-   <button type="submit" href="/home">Continuar comprando</button>
-   <a id="link-meu-aprendizado" href="#">Ir para Meu Aprendizado</a>
+   <button href="/products">Continuar comprando</button>
+   <a id="link-meu-aprendizado" href="/profileuser">Ir para Meu Aprendizado</a>
   </span>
   <div id="image-obrigado">
    <img src="images/checkout/obrigado-pela-compra.svg" alt="Obrigado! Sua compra foi bem sucedida.">
