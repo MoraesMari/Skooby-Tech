@@ -18,7 +18,6 @@ const playcourseRouter = require('./src/routes/playcourseRouter');
 const indexRouter = require('./src/routes/index');
 const studentsRouter = require('./src/routes/studentsRouter'); 
 const methodOverride = require('method-override');
-const logMiddleware = require('./src/middlewares/log');
 const studentsValidator = require('./src/middlewares/studentsValidator');
 const coursesValidator = require('./src/middlewares/coursesValidator');
 const { appendFileSync } = require('fs');
@@ -39,7 +38,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname,'src','views'));
 app.use(methodOverride('_method'));
-app.use(logMiddleware);
 
 app.use('/', indexRouter);
 app.use('/', studentsRouter);
