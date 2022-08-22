@@ -1,5 +1,6 @@
 const formatPrice = require('../utils/formatPrice')
 const filterByCategory = require('../utils/filterByCategory')
+const filterByID = require('../utils/filterByID')
 const { Courses } = require('../models')
 
 
@@ -25,19 +26,22 @@ const coursesController = {
     })
   },
 
-  detailsCourse: (req, res) => {
-    const  { id } = req.params
-    const courseFound = Courses.find((courses) => {
-       return courses.id === Number(id)
-    })
-
-    res.render('internalCourse', {
-        courseFound,
-        categorias,
+    detailsCourse: (req, res) => {
+      Courses.findByPk(1)
+      const courses = []
+      
+      courses.filter(course => {
+        if (courses.indexOf(course.id) === course.id) {
+          courses.push(course.id)
+        }
+      })
+        res.render('internalCourse', {
+        filterByID,
+        courses,
         formatPrice,
-        filterByCategory
-    })
+        
+     })
+    }
   }
-}
-
-module.exports = coursesController
+     
+      module.exports = coursesController

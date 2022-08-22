@@ -18,7 +18,7 @@
           <div class="categoria">
           <% categorias.forEach(categoria => { %>
           <% courses.forEach((course) => {%>
-          <a href="/courses/detail/<%courses.categoria%>"><h2 class="titulo-categorias">Cursos em <%= course.categoria %></h2></a>
+          <a href=""><h2 class="titulo-categorias">Cursos em <%= course.categoria %></h2></a>
           <%- include('partials/course-list', { courses: filterByCategory(courses, categoria) }) %>
           <% }) %>
           <% }) %>
