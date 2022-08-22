@@ -7,6 +7,7 @@
  font-family: 'Roboto', sans-serif;
  list-style-type: none;
  text-decoration: none;
+
 }
 
 header {
@@ -113,6 +114,7 @@ header #logo-header{
     text-align: center;
     margin-bottom: 58px;
     margin-left: 70px;
+    color: #fff;
     }
 
    .container-fluid {
@@ -132,6 +134,7 @@ header #logo-header{
     margin-left: 70px;
     display: flex;
     flex-direction: column;
+    
     }
 
     .carrinho > div {
@@ -153,6 +156,7 @@ header #logo-header{
     margin-top: 15px;
     display: flex;
     justify-content: center;
+    color: #fff;
     }
 
     .img-curso {
@@ -170,18 +174,21 @@ header #logo-header{
     .descricao {
     display: flex;
     flex-direction: column;
+    color: #fff;
     }
 
     .descricao-curso{
     font-weight: 370;
     font-size: 17px;
     margin-bottom: 1px;
+    color: #fff;
     }
        
     .descricao-duracao-curso{
     font-weight: 370;
     font-size: 17px;
     margin-bottom: 1px;
+    color: #fff;
     }
 
     button {
@@ -194,6 +201,7 @@ header #logo-header{
     display: flex;
     margin-right: 30px;
     margin-top: 30px;
+    color: #fff;
     }
 
     .icone-seta-rolagem-esquerda{
@@ -222,6 +230,7 @@ header #logo-header{
     margin-top: 85px;
     display: flex;
     flex-direction: column;
+    color: #fff;
    }
   
     .total > div {
@@ -312,6 +321,7 @@ header #logo-header{
         margin-top: 70px;
         display: flex;
         flex-direction: column;
+        color: #fff;
         }
     
         .favoritos > div {
@@ -357,6 +367,7 @@ header #logo-header{
           font-size: 12px;
           line-height: 14px;
           margin-bottom: 2px;
+          color: #fff;
         }
 
         .duracao-curso {
@@ -364,6 +375,7 @@ header #logo-header{
           font-weight: 320;
           font-size: 12px;
           margin-bottom: 2px;
+          color: #fff;
         }
 
         .preco-curso {
@@ -371,6 +383,7 @@ header #logo-header{
           font-weight: 320;
           font-size: 12px;
           margin-bottom: 2px;
+          color: #fff;
         }
 
         .imagem-carrinho {
@@ -409,6 +422,7 @@ header #logo-header{
             margin-top: 50px;
             display: flex;
             justify-content: left;
+            color: #fff;
         }
         
         .gallery-wrapper {

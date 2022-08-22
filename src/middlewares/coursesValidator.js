@@ -1,9 +1,6 @@
-// const studentsController = require('../controllers/studentsController');
+// const courseExist = (req, res, next) => {
+//     if 
+//     next();
+// }  
 
-// function studentsValidator (req,res,next){
- 
-
-//  }}
-
-//  module.exports = studentsValidator;
-
+// module.exports = courseExist

@@ -1,7 +1,6 @@
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
-// const getInfoDatabase = require("./src/utils/getInfoDatabase")
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const methodOverride = require('method-override');
@@ -21,8 +20,7 @@ const coursesValidator = require('./src/middlewares/coursesValidator');
 const { appendFileSync } = require('fs');
 const { application } = require('express');
 const studentIsLogged = require('./src/middlewares/studentsValidator');
-// const db = require("./src/models/db");
-// const courses = require("./src/models/Courses")
+
 
 const app = express();
 app.use(express.json());

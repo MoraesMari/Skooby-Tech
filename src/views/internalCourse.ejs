@@ -3,8 +3,9 @@
 <head>
     <%-include("partials/head") %>
     <link rel="stylesheet" href="/css/internalCourse.css">
-    <title>Curso Interna</title>
+    <title>Detalhes do Curso</title>
 </head>
+
 <body>
     <header>
         <%-include("partials/header") %>
@@ -12,7 +13,9 @@
     <div id="botao-acessibilidade">
         <img id="icone-acessibilidade" src="/images/courses/botaoacessibilidade.svg" alt="ícone do botão acessibilidade">
     </div>
-    <main>
+
+    <main>   
+       
         <span id="container-curso">
             <div id="preview-curso">
                 <div id="video-curso">
@@ -24,7 +27,7 @@
                     <div id="preco">
                         <div id="preco-detalhes">
                             <p class="desconto">De R$99,99</p>
-                            <p id="preco-curso"><strong><%= course.preco %></strong></p>
+                            <p id="preco-curso"><strong>Valor: </strong></p>
                             <p class="desconto">Ganhe 100% de desconto</p>
                         </div>
                         <div id="promocao">
@@ -72,7 +75,7 @@
                 </div>
             </span>
         </span>
-
+      
         <span id="container-informacoes-curso">
             <div id="trilha-curso">
                 <a href="/courses">Página Home > Metodologias de Desenvolvimento > GIT</a>
@@ -87,7 +90,7 @@
                 <p>Idioma do curso: <a>Português BR</a></p>
             </div>
         </span>
-
+        
         <img id="freepick-internalCourse" src="/images/internalCourse/main-image.svg">
 
         <span id="container-voce-vai-aprender">
@@ -146,7 +149,7 @@
                 </div>
                 <div class="caixa-mais-detalhes">
                     <img class="icone-mais-detalhes" src="/images/internalCourse/mais-detalhes.svg">
-                    <p>Comentários e Avalicações</p>
+                    <p>Comentários e Avaliações</p>
                 </div>
             </span>
     
@@ -229,14 +232,18 @@
                 </div>
             </span>
         </div>
-
+        
         <span id="outros-cursos-semelhantes">
-            <%-include("partials/course-list") %>
+            <%- include('partials/course-list') %>
         </span>
+     
+
         <div id="botao-whatsapp">
             <img id="icone-whatsapp" src="/images/internalCourse/icone-whatsapp.svg" alt="ícone do botão Whatsapp - Entre em contato conosco!">
         </div>
+      
     </main>
+
     <footer>
         <%-include("partials/footer") %>
     </footer>
