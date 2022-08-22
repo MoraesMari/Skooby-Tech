@@ -180,6 +180,17 @@ header #menu-entradas{
  
 }
 
+.texthi {
+  width: 15vh;
+  height: 6vh;
+  background-color: #373B3E;
+  border-radius: 15vh;
+  color: #01B671;
+  padding: 12px 4px 0px 15px;
+  margin: 0px 0px 0px 127px;
+  font-size: 20px;
+}
+
 .arthome2 {
  margin-bottom: -25px;
  margin-left: 0px;
@@ -187,22 +198,75 @@ header #menu-entradas{
 }
 
 #categoriasdecursos-home{
- width: 50%;
- margin-left: 25vh;
+width: 50%;
+margin-left: 25vh;
+margin-top: 8vh;
+color: rgb(202, 200, 200);
 }
 
-.categoriashome {
- background-color: #5A5F63;
- margin-top: 15px; 
+#categoriasdecursos-home:hover{
+  color: #fff;
+  opacity: none;
+  cursor: pointer;
+}
+
+.categoriashomeFront-End {
+ background-image: url('../images/home/categoriashomeFront-End.jpg');
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ background-blend-mode: overlay;
+ opacity: 0.7;
+ margin-top: 20px; 
  padding: 30px;
- font-size: 25px;
+ font-size: 35px;
  font-family: 'Roboto';
+
+ box-shadow: 0px 0px 5px #f74ea8;
 }
 
-.categoriashome a {
- color: white;
+.categoriashomeBack-End {
+  background-image: url('../images/home/categoriashomeBack-End.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  opacity: 0.8;
+  margin-top: 20px; 
+  padding: 30px;
+  font-size: 35px;
+  font-family: 'Roboto';
+  text-shadow: 0px 0px 20px #0026ff;
 }
 
+.categoriashomeFull-Stack {
+ background-image: url('../images/home/categoriashomeFull-Stack.jpg');
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ background-blend-mode: overlay;
+ opacity: 0.7;
+ margin-top: 20px; 
+ padding: 30px;
+ font-size: 35px;
+ font-family: 'Roboto';
+ text-shadow: 0px 0px 20px #0026ff;
+}
+  
+.categoriashomeMetodologias {
+  background-image: url('../images/home/categoriashomeMetodologias.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  opacity: 0.7;
+  margin-top: 20px; 
+  padding: 30px;
+  font-size: 35px;
+  font-family: 'Roboto';
+  text-shadow: 0px 0px 20px #de0e7d;
+}
+  
 
 #parceiros {
   display: flex;
