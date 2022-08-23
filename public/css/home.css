@@ -175,9 +175,60 @@ header #menu-entradas{
 
 .banner-carrossel {
  height: 400px;
- margin: 15px 15px;
  background-color: #c0c0c0;
- 
+}
+
+.carrossel {
+  overflow-x: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.carrossel > img {
+  width: 100%;
+  height: 400px;
+}
+
+.arrow-left, .arrow-right {
+  position: absolute;
+  top: 850px;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 25px;
+  width: 40px;
+  color: #fff;
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+  opacity: 0.1;
+  cursor: pointer;
+  border: none;
+}
+
+.arrow-left:hover, 
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.arrow-right {
+  right: 0;
+  left: auto;
+  text-align: right;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.item {
+  width: 100%;
+  height: 400px;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out;
+  opacity: 1;
+}
+
+.carrossel::-webkit-scrollbar {
+  display: none;
 }
 
 .texthi {
